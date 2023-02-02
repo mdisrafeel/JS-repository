@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            margin: auto;
+            height: 200px;
+            background-color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+            var name, h,e,m,s,c,total;
+            name = prompt("Enter the name ")
+            h=parseInt(prompt("Enter the Hindi marks "))
+            e=parseInt(prompt("Enter the English marks "))
+            m=parseInt(prompt("Enter the Maths marks "))
+            s=parseInt(prompt("Enter the Science marks "))
+            c=parseInt(prompt("Enter the Computer marks "))
+            total = h+e+m+s+c;
+
+            var name2, h2,e2,m2,s2,c2,total2;
+            name2 = prompt("Enter the name ")
+            h2=parseInt(prompt("Enter the Hindi marks "))
+            e2=parseInt(prompt("Enter the English marks "))
+            m2=parseInt(prompt("Enter the Maths marks "))
+            s2=parseInt(prompt("Enter the Science marks "))
+            c2=parseInt(prompt("Enter the Computer marks "))
+            total2 = h2+e2+m2+s2+c2;
+
+            document.write("<table border='1' width='50%'> ")
+                document.write("<tr> <th> Name </th> <th> Hindi </th> <th> English</th> <th> Maths </th>  <th> Science </th> <th> Computer </th> <th> Total </th> </tr>")
+                    
+                    document.write("<tr>")
+                    document.write("<td> "+name+"</td>")
+                    document.write("<td> "+h+"</td>")
+                    document.write("<td> "+e+"</td>")
+                    document.write("<td> "+m+"</td>")
+                    document.write("<td> "+s+"</td>")
+                    document.write("<td> "+c+"</td>")
+                    document.write("<td> "+total+"</td>")
+                    document.write("</tr>")
+
+                    document.write("<tr>")
+                    document.write("<td> "+name2+"</td>")
+                    document.write("<td> "+h2+"</td>")
+                    document.write("<td> "+e2+"</td>")
+                    document.write("<td> "+m2+"</td>")
+                    document.write("<td> "+s2+"</td>")
+                    document.write("<td> "+c2+"</td>")
+                    document.write("<td> "+total2+"</td>")
+                    document.write("</tr>")
+
+                document.write("</table> ")
+            
+
+
+    </script>
+
+</body>
+
+</html>

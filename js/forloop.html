@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        table{
+            margin: auto;
+            height: 200px;
+            background-color: rgb(121, 232, 161);
+            margin-bottom: 50px;
+        }
+        h1{
+            text-align: center;
+            color: rgb(145, 28, 200);
+            text-decoration: underline;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body> 
+    
+    <script>
+        // var i, count;
+        // count = parseInt(prompt("Enter number of student"));  
+
+        // for (i = 1; i <= count ; i++) {
+        //     var uname = prompt("Enter you name");
+        //     document.write("<p>"+ uname + "</p>");
+        // }
+        
+        document.write(" <h1> Students detail </h1> <br>")
+
+        var i, count;
+        count = parseInt(prompt("Enter number of student"));  
+        
+        document.write("<table border='1' width='50%' >");
+        document.write("<tr>  <th>I'D</th>  <th>NAME</th>  <th>BASIC SAL</th>  <th>CITY</th>  <th> Department</th> </tr>");
+
+        for (i = 1; i <= count ; i++) {
+            var id, name, salary, city, dep;
+            id=prompt("Enter Your I'D ");
+            name=prompt("Enter Your Nmae ");
+            salary=prompt("Enter Your SALARY ");
+            city=prompt("Plaese Enter Your CITY name");
+            dep=prompt("Your is DEPARTMENT ");
+            document.write("<tr>");
+            document.write("<td>" +id+ "</td>");
+            document.write("<td>" +name+ "</td>");
+            document.write("<td>" +salary+ "</td>");
+            document.write("<td>" +city+ "</td>");
+            document.write("<td>" +dep+ "</td>");
+            document.write("</tr>");
+        }
+
+        document.write("</table>");
+
+        var a, count;
+        count=parseInt(prompt("How many Product"));
+        
+        document.write("<br> <h1> This is Product </h1> <br>")
+
+        document.write("<table border='1' width=70%>")
+        document.write("<tr>  <th>I'd</th> <th>Phone number</th> <th>Price</th>  <th>Qty</th> <th>Total</th> </tr>")
+
+        for (a=1; a<=count; a++){
+            var id2, pnumber,qty,price,total;
+            id2=prompt("Enter the id");
+            pnumber=prompt("Enter Your moblile number");
+            qty=parseInt(prompt("Enter the Qty"));
+            price=parseInt(prompt("Enter the price"));
+            total=qty*price;
+
+            document.write("<tr>");
+            document.write("<td>" +id2+ "</td>");
+            document.write("<td>" +pnumber+ "</td>");
+            document.write("<td>" +qty+ "</td>");
+            document.write("<td>" +price+ "</td>");
+            document.write("<td>" +total+ "</td>");
+            document.write("</tr>");
+
+        }
+
+        document.write("</table>")
+    </script>
+
+</body>
+</html>

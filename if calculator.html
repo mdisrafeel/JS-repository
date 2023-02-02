@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let x;
+
+        x = parseInt(prompt("Press the num 1 , 2 , 3, 4"));
+
+        if(4>=x && 1<=x ){
+            if(1==x){
+                
+                let a ,b ,res;
+                a = parseInt(prompt("Enter 1st num"));
+                b = parseInt(prompt("Enter 2nd num"));
+                res= a+b ;
+                document.write(a+" + "+b+" = " +res);
+            }
+            else if(2==x){
+
+                let a ,b ,res;
+                a = parseInt(prompt("Enter 1st num"));
+                b = parseInt(prompt("Enter 2nd num"));
+                res= a-b 
+                document.write(a+" - "+b+" = " +res);
+            }
+            else if(3==x){
+              
+                let a ,b ,res;
+                a = parseInt(prompt("Enter 1st num"));
+                b = parseInt(prompt("Enter 2nd num"));
+                res= a*b 
+                document.write(a+" x "+b+" = " +res);
+                
+            }
+            else if(4==x){
+               
+                let a ,b ,res;
+                a = parseInt(prompt("Enter 1st num"));
+                b = parseInt(prompt("Enter 2nd num"));
+                res= a/b 
+                document.write(a+" / "+b+" = " +res);
+            }
+        }
+        else{
+            document.write("Invalid Number")
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            alert() :It is used to show alert and have only one option [OK]
+            prompt() :  To take user input 
+            parseInt() : Used to convert any String to integer
+                [45,67,89,32,89]
+            praseFloat() : Used to convert any String to float value
+                [12.876,90.999]
+            confirm() : Used for the confirmation .Like if user wants to continue or not 
+                        It will show 2 option OK and CANCLE
+        */
+
+        // alert("Welcome to the JS World !!");
+        // name ="Rachna ";
+        // alert("Welcome to the Web World !! "+name)
+        // confirm("Do you want to continue?");
+        var name = prompt("Enter the name ")
+        document.write("Welcome "+name)
+        // WAP to add 2 numbers
+
+        var n1,n2,res;
+        // n1=prompt("Enter the number 1 : ");
+        // n2=prompt("Enter the number 2: ");
+
+        // n1=parseInt(prompt("Enter the number 1 : "));
+        // n2=parseInt(prompt("Enter the number 2: "));
+        n1=parseFloat(prompt("Enter the number 1 : "));
+        n2=parseFloat(prompt("Enter the number 2: "));
+        res= n1+n2;
+        document.write("<p> "+n1+" + "+n2+" = "+res+"</p>");
+
+
+    </script>
+    
+</body>
+</html>

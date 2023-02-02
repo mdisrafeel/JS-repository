@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let currency, amount, enter;
+        currency = prompt("Enter the currency= inr , usd");
+        // amount = parseInt(prompt("Enter the Amount"));
+        // enter = prompt("Enter the currency= inr , usd , gbp , omr , bhd , Australian doller , euro , Pound , Yuan");
+
+        if (currency == "usd") {
+
+            amount = parseInt(prompt("Enter the Amount"));
+            enter = prompt("Enter the currency= inr , gbp , omr , bhd , Australian doller , euro , Pound , Yuan");
+
+
+            if (enter == "inr") {
+                document.write("USD convert to INR : " + amount + " x 81 = " + amount * 81);
+            }
+            else if (enter == "gbp") {
+                document.write("USD convert to GBP : " + amount + " x 0.81 = " + amount * 0.81);
+            }
+            else if (enter == "omr") {
+                document.write("USD convert to OMR (Omani Rial) : " + amount + " x 38 = " + amount * 38);
+            }
+            else if (enter == "bhd") {
+                document.write("USD convert to BHP (Bahraini Dinar) : " + amount + " x 38 = " + amount * 38);
+            }
+            else if (enter == "Australian doller") {
+                document.write("USD convert to Australian Doller : " + amount + " x 1.43 = " + amount * 1.43);
+            }
+            else if (enter == "euro") {
+                document.write("USD convert to EURO : " + amount + " x 0.92 = " + amount * 0.92);
+            }
+            else if (enter == "Pound") {
+                document.write("USD convert to POUND : " + amount + " x 0.81 = " + amount * 0.81);
+            }
+            else if (enter == "Yuan") {
+                document.write("USD convert to Chinese Yuan : " + amount + " x 6.75 = " + amount * 6.75);
+            }
+        }
+
+        else if (currency == "inr") {
+
+            amount = parseInt(prompt("Enter the Amount"));
+            enter = prompt("Enter the currency= usd , gbp , omr , bhd , Australian doller , euro , Pound , Yuan");
+
+
+            if (enter == "usd") {
+                document.write("INR convert to USD (United states Dollar) : " + amount + " x 0.012 = " + amount * 0.012);
+            }
+            if (enter == "gbp") {
+                document.write("INR convert to GBP : " + amount + " x 0.0099 = " + amount * 0.0099);
+            }
+            else if (enter == "omr") {
+                document.write("USD convert to OMR (Omani Rial) : " + amount + " x 0.0047 = " + amount * 0.0047);
+            }
+            else if (enter == "bhd") {
+                document.write("USD convert to  BHP (Bahraini Dinar) : " + amount + " x 0.0046 = " + amount * 0.0046);
+            }
+            else if (enter == "Australian doller") {
+                document.write("USD convert to Australian Doller : " + amount + " x 0.017 = " + amount * 0.017);
+            }
+            else if (enter == "euro") {
+                document.write("USD convert to EURO : " + amount + " x 0.011 = " + amount * 0.011);
+            }
+            else if (enter == "Pound") {
+                document.write("USD convert to POUND : " + amount + " x 0.0099 = " + amount * 0.0099);
+            }
+            else if (enter == "Yuan") {
+                document.write("USD convert to Chinese Yuan : " + amount + " x 0.082 = " + amount * 0.082);
+            }
+        }
+        else{
+            document.write("<h1> Invalid Input </h1>")
+        }
+    </script>
+
+</body>
+
+</html>
